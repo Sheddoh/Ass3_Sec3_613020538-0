@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+    
+
+
+    <ImageView
+        android:id="@+id/imageBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentTop ="true"
+            android:text="Happy Happy Birthday"
+            android:layout_marginTop="115dp"
+            android:textColor="#FF6347"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="33sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/boy"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="1000dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/imageView"
+            android:text="Happy birthday to my best friend, Have a wonderful happy, healthy birthday and many more to come. Happy Birthday Friend!"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+</RelativeLayout>
